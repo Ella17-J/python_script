@@ -29,8 +29,8 @@ message = "I own a " + fav_models[3] + " car."
 print(message)
 message = "I own a " + fav_models[4] + " car."
 print(message)
-
-
+new_fav_models = fav_models[:3]
+print("The first three names in the lists are ", new_fav_models )
 
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
@@ -39,3 +39,12 @@ print(motorcycles)
 print(popped_motorcycle)
 last_owned = motorcycles.pop() 
 print("The last motorcycle I owned was a " + last_owned.title() + ".")
+
+#printing all cars in titlecase except bmw in uppercase
+cars = ['audi', 'bmw', 'subaru', 'toyota']
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+
